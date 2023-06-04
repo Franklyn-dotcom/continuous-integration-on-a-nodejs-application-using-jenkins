@@ -1,0 +1,13 @@
+{
+  "name": "docker_web_node_app",
+  "version": "1.0.0",
+  "description": "Node.js on Docker and testing the appication using jenkins",
+  "author": "mbanugo franklyn mbanugofranklyn678@gmail.com",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
