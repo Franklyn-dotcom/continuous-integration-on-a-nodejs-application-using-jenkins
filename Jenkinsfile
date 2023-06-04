@@ -12,7 +12,7 @@ pipeline {
 	    steps {
 		echo "Testing builds ..."
 		withCredentials([usernamePassword(credentialsId: 'docker-credential', passwordVariable: 'PASS', usernameVariable: 'USER')]) {
-	             sh 'docker build -t franklyn27181/my-devops-projects:1.0 .'
+	             sh 'docker build -t franklyn27181/my-devops-projects .'
 		     sh "echo $PASS | docker login -u $USER --password-stdin"
 		     sh 'docker push franklyn27181/my-devops-projects:1.0'  
 		}
